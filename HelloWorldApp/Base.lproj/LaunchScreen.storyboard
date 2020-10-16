@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJH-0U-Juu">
-                                <rect key="frame" x="84.5" y="658" width="245" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJH-0U-Juu">
+                                <rect key="frame" x="84.5" y="637" width="245" height="75"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="245" id="hbU-zX-LWP"/>
@@ -30,11 +30,28 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o56-ik-ulx">
+                                <rect key="frame" x="16" y="88" width="382" height="220"/>
+                                <color key="backgroundColor" red="0.36588016741106555" green="1" blue="0.2895913081437701" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="TaI-dP-njY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nah-9j-lWb">
+                                <rect key="frame" x="16" y="343" width="382" height="220"/>
+                                <color key="backgroundColor" red="1" green="0.10657943175161877" blue="0.13430106738472725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iJH-0U-Juu" secondAttribute="bottom" constant="129" id="5lP-dr-xqi"/>
-                            <constraint firstItem="iJH-0U-Juu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TgH-HB-W2P"/>
+                            <constraint firstItem="nah-9j-lWb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8Hl-7K-9x3"/>
+                            <constraint firstItem="nah-9j-lWb" firstAttribute="height" secondItem="o56-ik-ulx" secondAttribute="height" id="EtR-yJ-ZdE"/>
+                            <constraint firstItem="nah-9j-lWb" firstAttribute="top" secondItem="o56-ik-ulx" secondAttribute="bottom" constant="35" id="FA6-bb-m5H"/>
+                            <constraint firstItem="iJH-0U-Juu" firstAttribute="top" secondItem="nah-9j-lWb" secondAttribute="bottom" constant="74" id="Frq-I9-s9z"/>
+                            <constraint firstItem="o56-ik-ulx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TCB-Ce-3Ii"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nah-9j-lWb" secondAttribute="trailing" constant="16" id="TIn-Nl-q1n"/>
+                            <constraint firstItem="o56-ik-ulx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Ulg-Fv-WBs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o56-ik-ulx" secondAttribute="trailing" constant="16" id="gei-xc-0PB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
